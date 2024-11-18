@@ -1,0 +1,185 @@
+\hypertarget{classTableCipher}{}\doxysection{Класс Table\+Cipher}
+\label{classTableCipher}\index{TableCipher@{TableCipher}}
+
+
+Шифрование методом табличной маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$mod\+Table\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTableCipher_a0e44b17b083f7ebfc610079f543dbbd8}\label{classTableCipher_a0e44b17b083f7ebfc610079f543dbbd8}} 
+{\bfseries Table\+Cipher} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор по умолчанию запрещен. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classTableCipher_a9fcd42337e856d3209183417be3055ab}{Table\+Cipher}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \mbox{\hyperlink{classTableCipher}{Table\+Cipher}}. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_a53d34df7efc5adca17fc99a51f647911}{encrypt}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Метод шифрования текста с помощью табличной маршрутной перестановки. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_af2ebc9f07ea6148312fa41fb387582f0}{decrypt}} (const std\+::wstring \&encrypted\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Расшифровывает текст, зашифрованный с помощью табличной маршрутной перестановки. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classTableCipher_aef5da2a22b81588a9d35e3d2e3e74980}{get\+Valid\+Key}} (const std\+::wstring \&key\+\_\+str)
+\begin{DoxyCompactList}\small\item\em Валидация ключа. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_a17f6b4c917a3b6524cd7439de10d82db}{get\+Valid\+Open\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Валидация открытого текста. \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_a25cbe0b0ff35b469be951ab1bd627a01}{get\+Valid\+Cipher\+Text}} (const std\+::wstring \&s)
+\begin{DoxyCompactList}\small\item\em Валидация зашифрованного текста. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTableCipher_aaba8d844f9bb60de90c823fdbf21bb4b}\label{classTableCipher_aaba8d844f9bb60de90c823fdbf21bb4b}} 
+int {\bfseries key}
+\begin{DoxyCompactList}\small\item\em Ключ для шифрования (Количество столбцов таблицы) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифрование методом табличной маршрутной перестановки 
+
+Ключ устанавливается в конструкторе. Для зашифровывания и расшифровывания предназначены методы encrypt и decrypt. \begin{DoxyWarning}{Предупреждения}
+Реализация только для русского языка
+\end{DoxyWarning}
+Класс, реализующий табличный шифр. Класс реализует шифр табличной маршрутной перестановки. 
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classTableCipher_a9fcd42337e856d3209183417be3055ab}\label{classTableCipher_a9fcd42337e856d3209183417be3055ab}} 
+\index{TableCipher@{TableCipher}!TableCipher@{TableCipher}}
+\index{TableCipher@{TableCipher}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{TableCipher()}{TableCipher()}}
+{\footnotesize\ttfamily Table\+Cipher\+::\+Table\+Cipher (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \mbox{\hyperlink{classTableCipher}{Table\+Cipher}}. 
+
+Создает объект \mbox{\hyperlink{classTableCipher}{Table\+Cipher}} с заданным ключом. Ключ количество столбцов.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, содержащая ключ шифра. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classTableCipher_af2ebc9f07ea6148312fa41fb387582f0}\label{classTableCipher_af2ebc9f07ea6148312fa41fb387582f0}} 
+\index{TableCipher@{TableCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{encrypted\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Расшифровывает текст, зашифрованный с помощью табличной маршрутной перестановки. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em encrypted\+\_\+text} & Текст для расшифровки. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableCipher_a53d34df7efc5adca17fc99a51f647911}\label{classTableCipher_a53d34df7efc5adca17fc99a51f647911}} 
+\index{TableCipher@{TableCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод шифрования текста с помощью табличной маршрутной перестановки. 
+
+Записывает текст в таблицу на основе полученного ключа и вычисленного значения количсества строк таблицы. Маршрут записи\+: по горизонтали слева направо, сверху вниз. Маршрут считывания\+: сверху вниз, справа налево.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Открытый текст для шифрования. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTableCipher_a25cbe0b0ff35b469be951ab1bd627a01}\label{classTableCipher_a25cbe0b0ff35b469be951ab1bd627a01}} 
+\index{TableCipher@{TableCipher}!getValidCipherText@{getValidCipherText}}
+\index{getValidCipherText@{getValidCipherText}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{getValidCipherText()}{getValidCipherText()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::get\+Valid\+Cipher\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Валидация зашифрованного текста. 
+
+Функция проверяет, что строка не пуста и содержит только символы прописных букв и звездочки (\textquotesingle{}$\ast$\textquotesingle{}).
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Входная строка зашифрованного текста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Строка зашифрованного текста, если она корректна. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если строка пуста или содержит недопустимые символы. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTableCipher_aef5da2a22b81588a9d35e3d2e3e74980}\label{classTableCipher_aef5da2a22b81588a9d35e3d2e3e74980}} 
+\index{TableCipher@{TableCipher}!getValidKey@{getValidKey}}
+\index{getValidKey@{getValidKey}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{getValidKey()}{getValidKey()}}
+{\footnotesize\ttfamily int Table\+Cipher\+::get\+Valid\+Key (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{key\+\_\+str }\end{DoxyParamCaption})}
+
+
+
+Валидация ключа. 
+
+Функция проверяет, что строка ключа не пуста и содержит только цифры. Если строка валидна, она преобразуется в целое число. В случае ошибки выбрасывается исключение.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key\+\_\+str} & Строка, содержащая ключ. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Целое число, представляющее ключ. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если ключ пустой, содержит нецифровые символы или key \texorpdfstring{$<$}{<}= 0. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classTableCipher_a17f6b4c917a3b6524cd7439de10d82db}\label{classTableCipher_a17f6b4c917a3b6524cd7439de10d82db}} 
+\index{TableCipher@{TableCipher}!getValidOpenText@{getValidOpenText}}
+\index{getValidOpenText@{getValidOpenText}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{getValidOpenText()}{getValidOpenText()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::get\+Valid\+Open\+Text (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Валидация открытого текста. 
+
+Функция обрабатывает входную строку, оставляя только буквы и пробелы. Буквы приводятся к строчному формату Если после обработки строка пуста, выбрасывается исключение.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em s} & Входная строка открытого текста. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Очищенная строка, содержащая только буквы верхнего регистра и пробелы. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \mbox{\hyperlink{classcipher__error}{cipher\+\_\+error}}} & Если после обработки строка оказывается пустой. \\
+\hline
+\end{DoxyExceptions}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modTableCipher_8h}{mod\+Table\+Cipher.\+h}}\item 
+mod\+Table\+Cipher.\+cpp\end{DoxyCompactItemize}

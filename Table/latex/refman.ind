@@ -1,0 +1,39 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+    \subitem {cipher\_error}, \hyperpage{8}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {TableCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {TableCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {getValidCipherText}
+    \subitem {TableCipher}, \hyperpage{10}
+  \item {getValidKey}
+    \subitem {TableCipher}, \hyperpage{11}
+  \item {getValidOpenText}
+    \subitem {TableCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {modTableCipher.h}, \hyperpage{13}
+
+  \indexspace
+
+  \item {TableCipher}, \hyperpage{8}
+    \subitem {decrypt}, \hyperpage{10}
+    \subitem {encrypt}, \hyperpage{10}
+    \subitem {getValidCipherText}, \hyperpage{10}
+    \subitem {getValidKey}, \hyperpage{11}
+    \subitem {getValidOpenText}, \hyperpage{11}
+    \subitem {TableCipher}, \hyperpage{9}
+
+\end{theindex}
