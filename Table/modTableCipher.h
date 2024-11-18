@@ -3,7 +3,7 @@
  * @author Грачев В.В.
  * @version 1.0
  * @brief Описание класса TableCipher
- * @date 18.11.2023
+ * @date 18.11.2024
  */
 
 #pragma once
